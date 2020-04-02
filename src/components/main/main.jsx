@@ -1,8 +1,7 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 
 const Main = (props) => {
-  // eslint-disable-next-line react/prop-types
   const {title, genre, releaseYear, films} = props;
 
   return (
@@ -101,14 +100,14 @@ const Main = (props) => {
 
           <div className="catalog__movies-list">
             {films.map((film, index) => (
-                <article key={film + index} className="small-movie-card catalog__movies-card">
-                  <div className="small-movie-card__image">
-                    <img src="img/macbeth.jpg" alt={film} width="280" height="175" />
-                  </div>
-                  <h3 className="small-movie-card__title">
-                    <a className="small-movie-card__link" href="movie-page.html">{film}</a>
-                  </h3>
-                </article>
+              <article key={film + index} className="small-movie-card catalog__movies-card">
+                <div className="small-movie-card__image">
+                  <img src="img/macbeth.jpg" alt={film} width="280" height="175" />
+                </div>
+                <h3 className="small-movie-card__title">
+                  <a className="small-movie-card__link" href="movie-page.html">{film}</a>
+                </h3>
+              </article>
             ))}
           </div>
 
@@ -135,5 +134,13 @@ const Main = (props) => {
   );
 };
 
+Main.propTypes = {
+  title: PropTypes.string.isRequired,
+  genre: PropTypes.string.isRequired,
+  releaseYear: PropTypes.number.isRequired,
+  films: PropTypes.arrayOf(
+      PropTypes.string
+  )
+};
 
 export default Main;
