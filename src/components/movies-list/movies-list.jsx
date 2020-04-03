@@ -20,12 +20,12 @@ const MoviesList = (props) => {
 
 MoviesList.propTypes = {
   films: PropTypes.arrayOf(
-      PropTypes.shape(
+      PropTypes.shape({
           title: PropTypes.string.isRequired,
           img: PropTypes.string,
-      ).isRequired,
+      }).isRequired,
   ),
   onMovieTitleClick: PropTypes.func.isRequired
 };
 
-export default SmallMovieCard;
+export default MoviesList;
