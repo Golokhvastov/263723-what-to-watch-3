@@ -1,10 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import Main from "./main.jsx";
+import MoviesList from "./movies-list.jsx";
 
-const title = `Revenant`;
-const genre = `Horror`;
-const releaseYear = 1998;
 const films = [
   {
     title: `Fantastic Beasts: The Crimes of Grindelwald`,
@@ -21,12 +18,9 @@ const films = [
 ];
 const movieTitleClickHandler = () => {};
 
-it(`Render Main`, () => {
+it(`Render MoviesList`, () => {
   const tree = renderer
-    .create(<Main
-      title = {title}
-      genre = {genre}
-      releaseYear = {releaseYear}
+    .create(<MoviesList
       films = {films}
       onMovieTitleClick = {movieTitleClickHandler}
     />)

@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import SmallMovieCard from "../small-movie-card/small-movie-card.jsx";
 
+const cardMouseEnterHandler = () => {};
+
 const MoviesList = (props) => {
   const {films, onMovieTitleClick} = props;
 
@@ -12,6 +14,7 @@ const MoviesList = (props) => {
           key={film + index}
           film = {film}
           onMovieTitleClick = {onMovieTitleClick}
+          onCardMouseEnter = {cardMouseEnterHandler}
         />
       ))}
     </div>

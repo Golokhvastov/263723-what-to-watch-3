@@ -259,6 +259,7 @@ Array [
       >
         <article
           className="small-movie-card catalog__movies-card"
+          onMouseEnter={[Function]}
         >
           <div
             className="small-movie-card__image"
@@ -277,7 +278,6 @@ Array [
             <a
               className="small-movie-card__link"
               href="movie-page.html"
-              onMouseEnter={[Function]}
             >
               Bohemian Rhapsody
             </a>
@@ -285,6 +285,7 @@ Array [
         </article>
         <article
           className="small-movie-card catalog__movies-card"
+          onMouseEnter={[Function]}
         >
           <div
             className="small-movie-card__image"
@@ -303,7 +304,6 @@ Array [
             <a
               className="small-movie-card__link"
               href="movie-page.html"
-              onMouseEnter={[Function]}
             >
               Revenant
             </a>
