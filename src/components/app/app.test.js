@@ -6,6 +6,7 @@ const title = `Some title`;
 const genre = `Some genre`;
 const releaseYear = 2030;
 const films = [`Aviator`, `We need to talk about Kevin`, `What We Do in the Shadows`];
+const movieTitleClickHandler = () => {};
 
 it(`Render App`, () => {
   const tree = renderer
@@ -14,6 +15,7 @@ it(`Render App`, () => {
       genre = {genre}
       releaseYear = {releaseYear}
       films = {films}
+      onMovieTitleClick = {movieTitleClickHandler}
     />)
     .toJSON();
 
