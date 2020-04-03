@@ -133,9 +133,9 @@ Main.propTypes = {
   releaseYear: PropTypes.number.isRequired,
   films: PropTypes.arrayOf(
       PropTypes.shape({
-          title: PropTypes.string.isRequired,
-          img: PropTypes.string,
-      }).isRequired,
+        title: PropTypes.string.isRequired,
+        img: PropTypes.string,
+      })
   ),
   onMovieTitleClick: PropTypes.func.isRequired
 };

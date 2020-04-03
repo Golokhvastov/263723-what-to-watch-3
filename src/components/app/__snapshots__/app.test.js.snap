@@ -264,9 +264,9 @@ Array [
             className="small-movie-card__image"
           >
             <img
-              alt="Aviator"
+              alt="Bohemian Rhapsody"
               height="175"
-              src="img/macbeth.jpg"
+              src="img/bohemian-rhapsody.jpg"
               width="280"
             />
           </div>
@@ -277,8 +277,9 @@ Array [
             <a
               className="small-movie-card__link"
               href="movie-page.html"
+              onMouseEnter={[Function]}
             >
-              Aviator
+              Bohemian Rhapsody
             </a>
           </h3>
         </article>
@@ -289,9 +290,9 @@ Array [
             className="small-movie-card__image"
           >
             <img
-              alt="We need to talk about Kevin"
+              alt="Revenant"
               height="175"
-              src="img/macbeth.jpg"
+              src="img/revenant.jpg"
               width="280"
             />
           </div>
@@ -302,33 +303,9 @@ Array [
             <a
               className="small-movie-card__link"
               href="movie-page.html"
+              onMouseEnter={[Function]}
             >
-              We need to talk about Kevin
-            </a>
-          </h3>
-        </article>
-        <article
-          className="small-movie-card catalog__movies-card"
-        >
-          <div
-            className="small-movie-card__image"
-          >
-            <img
-              alt="What We Do in the Shadows"
-              height="175"
-              src="img/macbeth.jpg"
-              width="280"
-            />
-          </div>
-          <h3
-            className="small-movie-card__title"
-            onClick={[Function]}
-          >
-            <a
-              className="small-movie-card__link"
-              href="movie-page.html"
-            >
-              What We Do in the Shadows
+              Revenant
             </a>
           </h3>
         </article>

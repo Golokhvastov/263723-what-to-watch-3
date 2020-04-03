@@ -18,8 +18,8 @@ const SmallMovieCard = (props) => {
 
 SmallMovieCard.propTypes = {
   film: PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      img: PropTypes.string,
+    title: PropTypes.string.isRequired,
+    img: PropTypes.string,
   }).isRequired,
   onMovieTitleClick: PropTypes.func.isRequired
 };

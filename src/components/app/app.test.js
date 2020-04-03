@@ -5,7 +5,14 @@ import App from "./app.jsx";
 const title = `Some title`;
 const genre = `Some genre`;
 const releaseYear = 2030;
-const films = [`Aviator`, `We need to talk about Kevin`, `What We Do in the Shadows`];
+const films = [{
+  title: `Bohemian Rhapsody`,
+  img: `img/bohemian-rhapsody.jpg`,
+},
+{
+  title: `Revenant`,
+  img: `img/revenant.jpg`,
+},];
 const movieTitleClickHandler = () => {};
 
 it(`Render App`, () => {
